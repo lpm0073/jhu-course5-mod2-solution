@@ -1,8 +1,3 @@
-
-
-body {
-  font-size: 1.2em;
-}
 #tobuylist, #alreadyboughtlist {
   float: left;
 }
@@ -13,9 +8,230 @@ body {
 .complete {
   color: green;
   font-style: oblique;
+  font-weight: 600;
 }
 
 .error {
-  color: red;
+  color: yellow;
   font-style: oblique;
+  font-weight: 600;
+}
+
+body {
+#  font-size: 16px;
+#  color: #fff;
+#  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 3px solid black;
+}
+
+.navbar-brand {
+#  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+#  font-family: 'Lora', serif;
+  color: black;
+#  font-size: 1.5em;
+#  text-transform: uppercase;
+#  font-weight: bold;
+#  text-shadow: 1px 1px 1px #222;
+#  margin-top: 0;
+#  margin-bottom: 0;
+#  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p { /* Kosher cert */
+#  color: #000;
+#  text-transform: uppercase;
+#  font-size: .7em;
+#  margin-top: 15px;
+}
+
+.navbar-brand p span { /* Star-K */
+#  vertical-align: middle;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+
+
+
+/* HOME PAGE */
+
+#menu-tile {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top:50px;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  color: black;
+}
+#menu-tile:hover {
+#  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background-color: gray;
+  background-position: center;
+}
+
+
+#menu-tile span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 900;
+  background-color: gray;
+  color: #fff;
+#  opacity: .5;
+}
+
+#menu-tile ol {
+#  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 1.25em;
+  font-weight: 400;
+  background-color: gray;
+  color: #fff;
+#  opacity: .5;
+}
+
+#menu-tile ol li {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#menu-tile ol button {
+  float: right;
+  margin-right: 25px;
+  font-size: 1.00em;
+  font-weight: 400;
+}
+
+/* END HOME PAGE */
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #logo-img {
+#    background: url('../favicon.ico') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  /* End Header */
+
+  /* Home Page */
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+
+  /* Home Page */
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+
+  /* Home page */
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
