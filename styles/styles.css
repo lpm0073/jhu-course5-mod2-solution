@@ -14,3 +14,8 @@ body {
   color: green;
   font-style: oblique;
 }
+
+.error {
+  color: red;
+  font-style: oblique;
+}
