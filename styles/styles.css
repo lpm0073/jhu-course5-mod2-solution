@@ -1,0 +1,16 @@
+
+
+body {
+  font-size: 1.2em;
+}
+#tobuylist, #alreadyboughtlist {
+  float: left;
+}
+#alreadyboughtlist {
+  margin-left: 40px;
+}
+
+.complete {
+  color: green;
+  font-style: oblique;
+}
